@@ -1,52 +1,84 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Портфолио Junior верстальщика</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-  </head>
+<html>
 
-  <body>
-    <header class="page-header">
-      <div class="container">
-          Контакты в шапке
-      </div>
-    </header>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap Test</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
 
-    <section class="hero-image">
-     <div class="container">
-      <h1 class="heading">Неопознанный Енот</h1>
-      <p>Junior верстальщик</p>
-     </div>
-    </section>
+<body style="padding:20px;">
+    <h1>Bootstrap Test</h1>
+    <table class="table thead-dark">
+        <thead class="">
+            <tr class="">
+                <th>Имя</th>
+                <th>Номер телефона</th>
+                <th>Почта</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table-danger">name_1</td>
+                <td>number_1</td>
+                <td>email_1</td>
+            </tr>
+            <tr>
+                <td>name_2</td>
+                <td>number_2</td>
+                <td>email_2</td>
+            </tr>
+            <tr>
+                <td>name_3</td>
+                <td>number_3</td>
+                <td>email_3</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="card">
+        <div class="card-header">Заголовок</div>
+        <div class="card-body">Текст</div>
+        <div class="card-footer">Подвал</div>
+    </div>
+    <br><br>
+    <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Cписок языков программирования<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">Web-программирование</li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP</a></li>
+            <li>
+                <hr />
+            </li>
+            <li class="dropdown-header">Data Science</li>
+            <li><a href="#">Python</a></li>
+        </ul>
+    </div>
+    <br>
+    <button class="bnt btn-link" data-toggle="collapse" data-target="#hide">JS Collapse</button>
+    <div class="collapse" id="hide">
+        TEST COLLAPSE
+    </div>
+    <br><br>
+    <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Modal Test</button>
+    <div class="modal fade" tabindex="-1" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal Title</h5>
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal text example</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
-    <section class="intro">
-     <div class="container">
-      <h2 class="subheading">Давайте познакомимся</h2>
-      <h3>Пара слов о себе</h3>
-      <p>Текст с парой слов о себе.</p>
-      <h3>Чем могу быть полезен</h3>
-      <p>Текст о том, чем могу быть полезен.</p>
-     </div>
-    </section>
-
-    <section class="portfolio">
-     <div class="container">
-     <h2 class="subheading">Мои работы</h2>
-
-      <h3>Сайт инструктора Кекса</h3>
-      <p>Небольшой лендинг о школе для начинающих.</p>
-
-      <h3>Блог начинающего верстальщика</h3>
-      <p>Статический блог про обучение HTML и CSS.</p>  
-     </div>
-    </section>
-
-    <footer class="page-footer">
-     <div class="container">
-         Контакты в подвале
-     </div>
-    </footer>
-  </body>
 </html>
